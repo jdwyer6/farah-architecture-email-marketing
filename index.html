@@ -4,8 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content= "light dark">
+<meta name="supported-color-schemes" content= "light dark">
 <title>Farah Architecture Email</title>
 <style type="text/css">
+    :root{
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+    }
 	body {
 		margin: 0;
 		background-color: #cccccc;
@@ -80,6 +86,19 @@
 		font-size: 15px;
 		text-align: left;
 	}
+    @media (prefers-color-scheme: dark ) {
+		.dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+		.light-img { display:none; display:none !important; }
+		.darkmode { background-color: #272623 !important; }
+		h1, h2, p, span, a, b { color: #ffffff !important; }
+		.link { color: #91ADD4 !important; }
+
+		[data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+		[data-ogsc] .light-img { display:none; display:none !important; }
+		[data-ogsc] .darkmode { background-color: #272623 !important; }
+		[data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { color: #ffffff !important; }
+		[data-ogsc] .link { color: #91ADD4 !important; }
+    }
 
 </style>
 </head>
